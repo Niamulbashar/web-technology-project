@@ -1,0 +1,37 @@
+[
+    {
+        "username": "Taz",
+        "password": "123",
+        "email": "taz@gmail.com"
+    },
+    {
+        "username": "naiz",
+        "password": "1",
+        "email": "1@g.com",
+        "gender": "Male"
+    },
+    {
+        "username": "Nahian",
+        "password": "1",
+        "email": "nahian@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "username": "Nahian",
+        "password": "1",
+        "email": "nahian@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "username": "samiul",
+        "password": "456",
+        "email": "sam@gmail.com",
+        "gender": "Male"
+    },
+    {
+        "username": "hasan",
+        "password": "123",
+        "email": "hasan@gmail.com",
+        "gender": "Male"
+    }
+]
