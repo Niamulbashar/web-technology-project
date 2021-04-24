@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+</head>
+<body>
+	<form method="post" action="../controller/TlogCheck.php" onsubmit ="return LogValidation()">
+		<fieldset>
+			<legend>LOGIN</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" id="username" value="">
+					<span id="msg1"> </span> </td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" id="password" value="">
+					<span id="msg2"> </span> </td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Submit"> 
+						<a href="Tsignup.html">Register</a>
+						<a href="../home.html">Home</a>
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	 <script type="text/javascript">
+	   function LogValidation()
+        {
+           let username =  document.getElementById('username').value;
+           let password =  document.getElementById('password').value;
+
+           if(username == "" ||  password == "" )
+           {
+              document.getElementById('msg1').innerHTML = "   Username Requried";
+              document.getElementById('msg2').innerHTML = "   Password Field Requried";
+              return false;
+           }
+
+           else
+           {
+              document.getElementById('msg1').innerHTML = "";
+                return true;
+           }
+        }
+    </script>
+	
+</body>
+
+
+
+</html>

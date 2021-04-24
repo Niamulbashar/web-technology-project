@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home --Welcome--</title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <td><img src="file/logo.png" alt=""></td>
+            <<td width="500px"><h1><label for="" style="color: orange;">Transportation Service Provider!</label></h1></td>
+            <td align="center"><h1><label for="" style="color: red;">Welcome To User Dashboard!</label></h1> <a href="jlogin.html">Logout</a></td>
+        </tr>
+        <tr >
+            <td >
+                <b><h2>User Account</h2></b>
+                <hr>
+                <ul>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="../controller/juserProfile.php">Profile</a></li>	
+                    <li><a href="jreview.html">Comment Box</a></li>
+					<li><a href="../controller/jreview.php">Show Reply</a></li>
+                    <li><a href="../controller/jtransportation.php">Book Transport</a></li>
+                    <li><a href="jroutePrice.html">Route List And Price</a></li>
+					<li><a href="jUserchangepassword.php">Change Password</a></li>
+                    <li><a href="jlogin.html">Logout</a></li>
+                </ul>
+            </td>
+            <td colspan="2" rowspan="2"><b>
+                    </form>
+					<legend><b><h2>Comment box</h2></b></legend>
+                    <form  method="post" action="../controller/jshowcommentbox.php" onsubmit ="return Validation()">
+                        <table width=40%>
+                            <tr>
+                              <td>    
+					           <td>Comment</td>
+					           <td> <textarea   name="comment" id="comment" > </textarea> 
+                                 <span id="msg1"> </span> </td>
+							  
+				              </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input type="submit" name="submit" value="Submit">
+                                </td>
+                            </tr>
+                        </table>  
+                    </form>
+	<script type="text/javascript">
+	   function Validation()
+        {
+           
+           let comment =  document.getElementById('comment').value;
+
+           if(comment == "" )
+           {
+              document.getElementById('msg1').innerHTML = "----**Please write Something";
+              return false;
+           }
+
+           else
+           {
+              document.getElementById('msg1').innerHTML = "";
+			 
+                return true;
+           }
+        }
+    </script>
+                
+   <td>
+                
+      </b></td>
+        </tr>
+        <tr>
+            <td  height="390px"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Copyright &COPY 2021</td>
+        </tr>
+    </table>
+	 
+	
+	
+	
+</body>
+</html>

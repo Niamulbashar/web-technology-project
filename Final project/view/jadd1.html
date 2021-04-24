@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD Transport</title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <tr>
+            <td><img src="file/logo.png" alt=""></td>
+            <td width="500px"><h1><label for="" style="color: orange;">Transportation Service Provider!</label></h1></td>
+            <td align="center"><h1><label for="" style="color: red;">Welcome To User Dashboard!</label></h1> <a href="jlogin.html">Logout</a></td>
+        </tr>
+        <tr >
+            <td >
+                <b><h2>User Account</h2></b>
+                <hr>
+                <ul>
+                    <li><a href="dashboard.php">Dashboard</a></li>
+                    <li><a href="../controller/juserProfile.php">Profile</a></li>	
+                    <li><a href="jreview.html">Comment Box</a></li>
+					<li><a href="../controller/jreview.php">Show Reply</a></li>
+                    <li><a href="../controller/jtransportation.php">Book Transport</a></li>
+                    <li><a href="jroutePrice.html">Route List And Price</a></li>
+					<li><a href="jUserchangepassword.php">Change Password</a></li>
+                    <li><a href="jlogin.html">Logout</a></li>
+                </ul>
+            </td>
+            <td colspan="2" rowspan="2"><b>
+	<form method="post" action="../controller/jadd1.php">
+		<fieldset>
+			<legend>ROUTE LIST AND PRICE </legend>
+			<table>
+				<tr>
+					<td>From</td>
+					<td><input type="text" name="frome" value="Dhaka"></td>
+				</tr>
+				<tr>
+					<td>TO</td>
+					<td><input type="text" name="too" value="Cumilla"></td>
+				</tr>
+				<tr>
+					<td>PRICE</td>
+					<td><input type="text" name="price" value="2000"></td>
+				</tr>
+				<tr>
+					<td>Transport no</td>
+					<td>
+					<select name="transport">
+						<option value ="BUSNO4">BUSNO4</option>
+						<option value ="BUSN11">BUSN11</option>
+						<option value ="BUSN12">BUSN12</option>
+						<option value ="BUSN14">BUSN14</option>
+						<option value ="BUSN18">BUSN18</option>
+						<option value ="BUSN06">BUSNO6</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td>START TIME</td>
+					<td>
+					<select name="time">
+						<option value ="9.30am">9.30am</option>
+						<option value ="11.40am">11.40am</option>
+						<option value ="12.52pm">12.52pm</option>
+						<option value ="10.30pm">10.30pm</option>
+						<option value ="11.40pm">11.40pm</option>
+						<option value ="12.30am">12.30am</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" name="submit" value="Submit" > 
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+        <tr>
+            <td  height="390px"></td>
+        </tr>
+        <tr>
+            <td colspan="3" align="center">Copyright &COPY 2021</td>
+        </tr>
+    </table>
+</body>
+</html>

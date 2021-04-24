@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration</title>
+	<script type="text/javascript" src="../scripts/Tscript.js"></script>
+	<script type="text/javascript" src="../scripts/Tscript2.js"></script>
+</head>
+<body>
+	<h1 id='myid'>Registration</h1>
+
+<form method="POST" action="../controller/TregCheck.php" >
+		<fieldset>
+			<legend>Registration From</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" id="name" value="" onkeyup="NameValidation()" />
+					 <span id="msgN"> </span> 
+                      
+				</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" name="email" id="email" onkeyup="EmailValidation()"/>
+					<span id="ajaxe"> </span></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" id="password"> <!-- onkeyup="passwordCheck()" -->
+					<!-- <br> --><span id="msg8">	 </span>
+				</td>
+				 <div id='result'></div>
+				</tr>
+				<tr>
+					<td>Confirm Password</td>
+					<td><input type="password" name="repass" id="repass" onkeyup="repassCheck()">
+					<span id="msg9"> </span></td>
+				</tr>
+		
+				
+				<td>Gender</td>
+			
+                     <td> <input type="radio" id="male" name="gender" value="Male" onclick ="GenderValidation()" > Male 
+				<input type="radio" id="female" name="gender" value="Female" onclick="GenderValidation()" > Female
+				<input type="radio" id="other" name="gender" value="Other" onclick="GenderValidation()" > Other
+					 <span id="msgG"> </span></td>
+			</tr>	
+			<tr>
+
+				<td>Date of Birth</td>
+			
+					        <td><input type="date" name="dob" id=""> 	
+							
+			</tr>	
+
+<tr>
+					
+					<td>
+						<input type="submit" name="signup" value="Submit"> 
+						<input type="reset">
+					</td>
+				</tr>
+
+				</table>
+		</fieldset>
+	</form>
+
+
+
+	
+
+</body>
+</html>

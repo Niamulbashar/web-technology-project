@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+</head>
+<body>
+	<form method="POST" action=" ../controller/jregCheck.php" onsubmit ="return FromValidation()">
+		<fieldset>
+			<legend>Registration From</legend>
+			<table>
+				<tr>
+					<td>Username</td>
+					<td><input type="text" name="username" id="username">
+					<span id="msg1"> </span> </td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" name="password" id="password">
+					<span id="msg2"> </span></td>
+				</tr>
+				<tr>
+					<td>Confirm Password</td>
+					<td><input type="password" name="repass" id="repass">
+					<span id="msg3"> </span></td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td><input type="email" name="email" id="email">
+					<span id="msg4"> </span></td>
+				</tr>
+				
+				<td>Gender</td>
+			
+                     <td><input type="radio" name="gender"     value="Male"   id="gender">Male
+                     <input type="radio"     name="gender"     value="Female" id="gender">Female
+                     <input type="radio"     name="gender"     value="Other"  id="gender">Other<td>
+					 <span id="msg5"> </span></td>
+			</tr>	
+			<tr>
+				<td>Date of Birth</td>
+			
+					        <td><input type="date" name="dob" id="dob">
+                             <span id="msg6"></span></td>						
+			</tr>	
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Submit" name="submit">
+                        <input type="reset" value="reset">
+					</td>
+				</tr>
+			</table>
+		</fieldset>
+	</form>
+	 <script type="text/javascript">
+	   function FromValidation()
+        {
+           let username =  document.getElementById('username').value;
+           let password =  document.getElementById('password').value;
+		   let repass =    document.getElementById('repass').value;
+           let email =     document.getElementById('email').value;
+		   let gender =    document.getElementsByName('gender').value;
+           let dob =        document.getElementById('dob').value;
+          
+
+           if(username == "" || password == "" ||repass == ""  || email == "" || gender == "" ||dob== "" )
+           {
+              document.getElementById('msg1').innerHTML = "----**Name Field cannot be empty";
+              document.getElementById('msg2').innerHTML = "----**Password Field cannot be empty";
+              document.getElementById('msg3').innerHTML = "----**confirmPassword Field cannot be empty";
+              document.getElementById('msg4').innerHTML = "----**Email Field cannot be empty";
+              document.getElementById('msg5').innerHTML = "----**Gender cannot be empty";
+              document.getElementById('msg6').innerHTML = "----**Date of Birth cannot be empty";
+ 
+              return false;
+           }
+
+           else
+           {
+              document.getElementById('msg1').innerHTML = "";
+                return true;
+           }
+        }
+    </script>
+
+</body>
+
+</html>	 
+	 
+	 
+	 
